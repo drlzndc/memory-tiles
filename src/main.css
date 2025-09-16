@@ -1,0 +1,32 @@
+@import 'tailwindcss';
+
+
+@theme {
+    --color-background: var(--color-black);
+
+    --color-dark_text: var(--color-black);
+    --color-light_text: var(--color-neutral-200);
+
+    --color-dark_button: var(--color-neutral-400);
+    --color-light_button: var(--color-neutral-200);
+
+    --color-tile_on: var(--color-neutral-200);
+    --color-tile_off: var(--color-neutral-700);
+
+    --text-small_text: var(--text-lg);
+    --text-large_text: var(--text-5xl);
+}
+
+@keyframes tile-flash {
+    0% {
+        background-color: var(--color-tile_off);
+    }
+
+    50% {
+        background-color: var(--color-tile_on);
+    }
+
+    100% {
+        background-color: var(--color-tile_off);
+    }
+}
